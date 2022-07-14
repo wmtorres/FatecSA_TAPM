@@ -35,6 +35,7 @@ void ConfigTimer0(void)
     SPPCFG  = 0b00000000;
     ADCON0  = 0b00000000;
     ADCON1  = 0b00001111;
+	/// Configura registrador do Timer0 
     TMR0    = TIMER0_INIT_VALUE;  //Set initial value of TMR0 register (for counting 1ms, as we need)
 
 }
